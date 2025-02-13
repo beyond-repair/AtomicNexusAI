@@ -1,4 +1,4 @@
-error_handler.py
+# error_handler.py
 
-def handle_error(error):
+def handle_error(error: Exception) -> None:
     print(f"[ERROR] {error}")
