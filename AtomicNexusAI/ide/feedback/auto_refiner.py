@@ -1,6 +1,6 @@
-auto_refiner.py
+# auto_refiner.py
 
 class AutoRefiner:
-    def refine(self, code):
+    def refine(self, code: str) -> str:
         print("Automatically refining code.")
         return code
