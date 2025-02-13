@@ -8,3 +8,6 @@ class PredictiveCache:
         if key not in self.cache:
             self.cache[key] = compute_func()
         return self.cache[key]
+
+
+# End of file
