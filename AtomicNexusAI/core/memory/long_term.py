@@ -1,11 +1,11 @@
-long_term.py
+# long_term.py
 
 class LongTermMemory:
-    def __init__(self):
+    def __init__(self) -> None:
         self.memory = []
 
-    def add(self, data):
+    def add(self, data: any) -> None:
         self.memory.append(data)
 
-    def retrieve_all(self):
+    def retrieve_all(self) -> list:
         return self.memory
