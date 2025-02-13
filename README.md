@@ -16,32 +16,3 @@ Atomic Nexus AI is a modular, scalable, and secure AI framework designed to supp
    ```bash
    git clone https://github.com/beyond-repair/AtomicNexusAI.git
    cd AtomicNexusAI
-
-2. Install Dependencies:
-
-pip install -r requirements.txt
-
-
-3. Configure the Environment:
-Edit config/default_settings.yaml as needed.
-
-
-4. Run the Application:
-
-python main.py --config config/default_settings.yaml
-
-
-
-Testing
-
-Run all tests using:
-
-pytest
-
-Deployment
-
-Use the provided CI/CD workflows in .github/workflows/ and the deploy.sh script for automated deployment.
-
-License
-
-This project is licensed under the MIT License.
