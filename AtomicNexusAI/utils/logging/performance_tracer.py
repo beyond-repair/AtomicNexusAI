@@ -1,8 +1,8 @@
-performance_tracer.py
+# performance_tracer.py
 import time
 
 class PerformanceTracer:
-    def trace(self, func, *args, **kwargs):
+    def trace(self, func: callable, *args, **kwargs) -> any:
         start = time.time()
         result = func(*args, **kwargs)
         end = time.time()
