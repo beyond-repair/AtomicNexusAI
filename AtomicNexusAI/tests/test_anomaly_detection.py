@@ -1,9 +1,9 @@
-test_anomaly_detection.py
+# test_anomaly_detection.py
 import unittest
 from security.audit.anomaly_detector import AnomalyDetector
 
 class TestAnomalyDetection(unittest.TestCase):
-    def test_detection(self):
+    def test_detection(self) -> None:
         detector = AnomalyDetector()
         logs = ["All good", "Error: something failed", "Warning: check system"]
         anomalies = detector.detect(logs)
