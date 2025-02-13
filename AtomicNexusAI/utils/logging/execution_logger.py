@@ -1,4 +1,7 @@
 # execution_logger.py
+import logging
+
+logger = logging.getLogger(__name__)
 
 def log(message: str) -> None:
-    print(f"[EXECUTION LOG] {message}")
+    logger.info(message)
