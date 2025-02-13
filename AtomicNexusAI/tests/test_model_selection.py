@@ -1,4 +1,4 @@
-test_model_selection.py
+# test_model_selection.py
 import unittest
 from core.models.adaptive_selector import AdaptiveSelector
 
@@ -6,7 +6,7 @@ class DummyTask:
     pass
 
 class TestModelSelection(unittest.TestCase):
-    def test_model_selection(self):
+    def test_model_selection(self) -> None:
         selector = AdaptiveSelector()
         task = DummyTask()
         model = selector.select_model(task)
