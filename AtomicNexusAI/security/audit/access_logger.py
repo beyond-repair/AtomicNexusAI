@@ -1,5 +1,5 @@
-access_logger.py
+# access_logger.py
 
 class AccessLogger:
-    def log_access(self, user, action):
+    def log_access(self, user: str, action: str) -> None:
         print(f"User {user} performed {action}.")
