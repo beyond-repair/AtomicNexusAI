@@ -1,6 +1,5 @@
-oauth_handler.py
+# oauth_handler.py
 
 class OAuthHandler:
-    def authenticate(self, token):
-        # Dummy token validation
+    def authenticate(self, token: str) -> bool:
         return token == "valid_token"
