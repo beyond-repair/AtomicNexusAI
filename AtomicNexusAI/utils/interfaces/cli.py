@@ -1,7 +1,7 @@
-cli.py
+# cli.py
 import argparse
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description="Atomic Nexus AI CLI")
     parser.add_argument('--run', action='store_true', help="Run the main application")
     args = parser.parse_args()
