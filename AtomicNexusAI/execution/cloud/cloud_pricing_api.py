@@ -1,7 +1,7 @@
-cloud_pricing_api.py
+# cloud_pricing_api.py
 
 class CloudPricingAPI:
-    def get_real_time_pricing(self, task):
+    def get_real_time_pricing(self, task: object) -> dict:
         # Dummy pricing data for demonstration
         return {
             'cloud': 10.0,
