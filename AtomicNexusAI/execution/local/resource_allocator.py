@@ -1,5 +1,5 @@
-resource_allocator.py
+# resource_allocator.py
 
 class ResourceAllocator:
-    def allocate(self, task):
+    def allocate(self, task: object) -> None:
         print(f"Allocating resources for task {task}")
