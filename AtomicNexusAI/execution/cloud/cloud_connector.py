@@ -1,5 +1,5 @@
-cloud_connector.py
+# cloud_connector.py
 
 class CloudConnector:
-    def connect(self):
+    def connect(self) -> None:
         print("Connecting to cloud service.")
