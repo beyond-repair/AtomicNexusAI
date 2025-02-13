@@ -1,10 +1,10 @@
-web_api.py
+# web_api.py
 from flask import Flask, jsonify
 
 app = Flask(__name__)
 
 @app.route('/status')
-def status():
+def status() -> any:
     return jsonify({"status": "Atomic Nexus AI is running"})
 
 if __name__ == '__main__':
