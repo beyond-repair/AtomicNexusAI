@@ -1,0 +1,5 @@
+networkx
+plotly
+Flask
+pytest
+flake8
