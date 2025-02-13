@@ -1,15 +1,13 @@
 # main.py
 import argparse
 import logging
-import yaml
-from config import env_config
+import sys
+from config.logging_config import setup_logging
+from config.config_manager import load_config
 
-logging.basicConfig(level=logging.INFO)
+# Initialize centralized logging.
+setup_logging()
 logger = logging.getLogger(__name__)
-
-def load_config(config_path: str) -> dict:
-    with open(config_path, 'r') as file:
-        return yaml.safe_load(file)
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Atomic Nexus AI")
@@ -19,12 +17,12 @@ def main() -> None:
         config = load_config(args.config)
     except Exception as e:
         logger.error("Error loading configuration: %s", e)
-        return
+        sys.exit(1)
 
     mode = "debug" if config['app']['debug'] else "production"
     logger.info("Starting %s version %s in %s mode.", config['app']['name'], config['app']['version'], mode)
     
-    # Initialize and start the application components here.
+    # Initialize and start application components here.
     logger.info("Atomic Nexus AI is now running.")
 
 if __name__ == '__main__':
