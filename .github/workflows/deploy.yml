@@ -1,0 +1,26 @@
+# deploy.yml
+name: Deploy Atomic Nexus AI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Security Audit
+        run: python -m security.audit.attack_simulator --strict-mode
+
+      - name: Run Tests
+        run: pytest --maxfail=1 --disable-warnings -q
+
+      - name: Deploy to Production
+        run: ./deploy.sh
