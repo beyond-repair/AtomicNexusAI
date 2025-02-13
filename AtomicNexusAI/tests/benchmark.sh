@@ -7,6 +7,3 @@ start=$(date +%s)
 sleep 2
 end=$(date +%s)
 echo "Benchmark completed in $(($end - $start)) seconds."
-
-> Note: Make this file executable:
-chmod +x tests/benchmark.sh
