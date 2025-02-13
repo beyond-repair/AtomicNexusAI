@@ -1,8 +1,8 @@
-execution_tracer.py
+# execution_tracer.py
 import time
 
 class ExecutionTracer:
-    def trace(self, func, *args, **kwargs):
+    def trace(self, func: callable, *args, **kwargs) -> any:
         start = time.time()
         result = func(*args, **kwargs)
         end = time.time()
