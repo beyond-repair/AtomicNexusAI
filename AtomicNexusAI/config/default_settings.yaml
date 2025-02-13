@@ -1,0 +1,15 @@
+default_settings.yaml
+app:
+  name: Atomic Nexus AI
+  version: 1.0
+  debug: true
+
+database:
+  host: localhost
+  port: 5432
+  user: admin
+  password: admin
+
+cloud:
+  provider: aws
+  region: us-east-1
