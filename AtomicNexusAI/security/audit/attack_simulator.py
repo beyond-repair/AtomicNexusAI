@@ -1,7 +1,7 @@
-attack_simulator.py
+# attack_simulator.py
 import argparse
 
-def simulate_attack(strict_mode=False):
+def simulate_attack(strict_mode: bool = False) -> None:
     print("Simulating attack...")
     if strict_mode:
         print("Strict mode enabled: simulating severe attack conditions.")
