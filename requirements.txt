@@ -1,5 +1,6 @@
-networkx
-plotly
-Flask
-pytest
-flake8
+networkx>=3.0
+PyYAML>=6.0
+Flask>=2.0
+plotly>=5.0
+pytest>=7.0
+flake8>=6.0

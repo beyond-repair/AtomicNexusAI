@@ -1,15 +1,21 @@
-# default_settings.yaml
+# default_settings.yaml — Claim-0 demo defaults (not for production)
 app:
   name: Atomic Nexus AI
-  version: 1.0
+  version: 0.1.0
   debug: true
 
-database:
-  host: localhost
-  port: 5432
-  user: admin
-  password: admin
+demo:
+  agents:
+    - name: explorer
+      model: default_model
+    - name: coordinator
+      partners:
+        - explorer
+  sample_logs:
+    - "All good"
+    - "Error: something failed"
+    - "Warning: check system"
 
 cloud:
-  provider: aws
-  region: us-east-1
+  provider: stub
+  region: local

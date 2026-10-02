@@ -8,49 +8,94 @@
 
 # Atomic Nexus AI
 
-### Feature list is aspirational. Not a shipped framework.
+### Claim-0 modular agent / hybrid-execution sketch — not a shipped framework
 
-[![Lifecycle](https://img.shields.io/badge/●_ARCHIVE-64748b?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance)
+[![Lifecycle](https://img.shields.io/badge/●_ACTIVE_SKETCH-22c55e?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance)
 [![Claim](https://img.shields.io/badge/Claim_0-22c55e?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance/blob/main/docs/CLAIM_VALIDATION.md)
 [![Governance](https://img.shields.io/badge/ADL--Governance-7c3aed?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance)
 
 ```
-LIFECYCLE   ARCHIVE QUEUE
+LIFECYCLE   RUNNABLE SKETCH (Claim-0)
 CLAIM       0
-NOT CLAIMED profit · live trading · product
+NOT CLAIMED IDE product · live cloud offload · K8s/AWS runners · profit
 ```
 
 </div>
 
 ---
-> **ARCHIVE QUEUE.** Historical only. No profit, deployment, or product claim.
 
-## ▌ STATUS
+## Status
 
-Archive-queue under [ADL-Governance](https://github.com/beyond-repair/ADL-Governance). Do not use for live trading, deployment, or as a product.
+**RUNNABLE SKETCH — NOT A COMPLETE PRODUCT.**
+
+Historical archive-queue layout repaired so a stranger can clone, install, run a local demo, and pass pytest. The README feature list below was always aspirational; this Claim-0 surface is a **mock modular agent + DAG + hybrid execution decision** path only.
 
 ---
 
-## ▌ PRESERVED BODY
+## What works (Claim-0)
 
-# Atomic Nexus AI
+| Surface | Behavior |
+| --- | --- |
+| `python main.py` | Load YAML config, run autonomous + collaborative agents on a NetworkX DAG, hybrid local/cloud *stub* decision, memory + anomaly-detect demo |
+| `python -m AtomicNexusAI` | Same demo via package `__main__` |
+| Package `AtomicNexusAI` | Installable; `config`, `core` (agents/memory/models/workflows), `execution` stubs, `security.audit.anomaly_detector` |
+| `pytest` | Repo-root suite covering config, agents, DAG, models, memory/execution, anomaly, main smoke |
 
-Atomic Nexus AI is a modular, scalable, and secure AI framework designed to support autonomous and collaborative agents with hybrid execution (local and cloud).
+## What is **not** claimed
 
-## Features
+- Full IDE / visual builder / debugger / tool marketplace
+- Real AWS, Kubernetes, or container runners
+- Production security (OAuth, encryption, attack simulation)
+- Profit, deployment readiness, or live trading
 
-- **Core AI/Agent Infrastructure:** Autonomous and collaborative agents, adaptive model selection, and memory management.
-- **Development Environment:** Built-in code editor, visual builder, debugger, and tool marketplace.
-- **Hybrid Execution:** Intelligent resource allocation and cost-aware cloud offloading.
-- **Security:** Secure communications, encryption, authentication, and audit logging.
-- **Utilities:** Logging, performance tracing, and interfaces for CLI and web APIs.
+Orphaned root trees (`utils/`, `security/`, `ecurity/`, `github/`) are historical leftovers; the installable package lives under `AtomicNexusAI/`.
 
-## Setup
+---
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/beyond-repair/AtomicNexusAI.git
-   cd AtomicNexusAI
+## Quick start (stranger clone)
+
+```bash
+git clone https://github.com/beyond-repair/AtomicNexusAI.git
+cd AtomicNexusAI
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+python main.py
+pytest -q
+```
+
+Optional AES helper (not required for demo/tests):
+
+```bash
+pip install -e ".[crypto]"
+```
+
+---
+
+## Layout
+
+```
+AtomicNexusAI/                 ← repo root
+├── main.py                    ← Claim-0 demo entrypoint
+├── pyproject.toml
+├── requirements.txt
+├── tests/                     ← maintained pytest suite
+└── AtomicNexusAI/             ← installable package
+    ├── config/                ← YAML + logging
+    ├── core/                  ← agents, memory, models, workflows
+    ├── execution/             ← local/cloud stubs + offload decision
+    ├── security/audit/        ← anomaly detector used by demo
+    ├── ide/                   ← historical stubs (not Claim-0 surface)
+    └── utils/                 ← logging / interfaces / optimizers stubs
+```
+
+---
+
+## See also
+
+- [CLAIM_STATUS.md](CLAIM_STATUS.md) — allowed / forbidden statements
+- [ARCHIVED.md](ARCHIVED.md) — historical archive note (sketch repaired for Claim-0)
+- [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) · [Claim levels 0–5](https://github.com/beyond-repair/ADL-Governance/blob/main/docs/CLAIM_VALIDATION.md)
 
 ---
 
@@ -58,7 +103,6 @@ Atomic Nexus AI is a modular, scalable, and secure AI framework designed to supp
 
 **REWRITE · BUILD · TRANSCEND**
 
-**William (Brian) Ware** · [Atomic Dream Labs](https://github.com/beyond-repair)  
-Governing source: [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) · [Claim levels 0–5](https://github.com/beyond-repair/ADL-Governance/blob/main/docs/CLAIM_VALIDATION.md)
+**William (Brian) Ware** · [Atomic Dream Labs](https://github.com/beyond-repair)
 
 </div>
