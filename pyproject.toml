@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atomic-nexus-ai"
+version = "0.1.0"
+description = "Claim-0 modular AI agent / hybrid-execution sketch (Atomic Nexus AI)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "beyond-repair" }]
+dependencies = [
+    "networkx>=3.0",
+    "PyYAML>=6.0",
+    "Flask>=2.0",
+    "plotly>=5.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "flake8>=6.0"]
+crypto = ["cryptography>=41.0"]
+
+[project.urls]
+Repository = "https://github.com/beyond-repair/AtomicNexusAI"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["AtomicNexusAI*"]
+exclude = ["AtomicNexusAI.tests*", "tests*", "utils*", "security*", "ecurity*", "github*"]
+
+[tool.setuptools.package-data]
+AtomicNexusAI = ["config/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
