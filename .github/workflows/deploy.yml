@@ -23,4 +23,6 @@ jobs:
         run: pytest --maxfail=1 --disable-warnings -q
 
       - name: Deploy to Production
-        run: ./deploy.sh
+        # deploy.sh is mode 100644 in git. Direct execution failed run 37492591439
+        # with exit 126. bash does not require the executable bit. The script only echoes.
+        run: bash deploy.sh
