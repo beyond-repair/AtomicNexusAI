@@ -1,21 +1,21 @@
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════════╗
+╔═════════════════════════════════════════════════════════════╗
 ║   ATOMIC DREAM LABS  ·  BEYOND-REPAIR                        ║
-╚══════════════════════════════════════════════════════════════╝
+╚═════════════════════════════════════════════════════════════╝
 ```
 
 # Atomic Nexus AI
 
 ### Claim-0 modular agent / hybrid-execution sketch — not a shipped framework
 
-[![Lifecycle](https://img.shields.io/badge/●_ACTIVE_SKETCH-22c55e?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance)
+[![Lifecycle](https://img.shields.io/badge/%E2%97%8F_RESEARCH_SKETCH-22c55e?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance)
 [![Claim](https://img.shields.io/badge/Claim_0-22c55e?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance/blob/main/docs/CLAIM_VALIDATION.md)
 [![Governance](https://img.shields.io/badge/ADL--Governance-7c3aed?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance)
 
 ```
-LIFECYCLE   RUNNABLE SKETCH (Claim-0)
+LIFECYCLE   RESEARCH / RUNNABLE SKETCH (Claim-0)
 CLAIM       0
 NOT CLAIMED IDE product · live cloud offload · K8s/AWS runners · profit
 ```
@@ -26,9 +26,11 @@ NOT CLAIMED IDE product · live cloud offload · K8s/AWS runners · profit
 
 ## Status
 
-**RUNNABLE SKETCH — NOT A COMPLETE PRODUCT.**
+**RESEARCH — RUNNABLE SKETCH — NOT A COMPLETE PRODUCT.**
 
 Historical archive-queue layout repaired so a stranger can clone, install, run a local demo, and pass pytest. The README feature list below was always aspirational; this Claim-0 surface is a **mock modular agent + DAG + hybrid execution decision** path only.
+
+Sweep-242 (2026-10-06): classification corrected from inherited "ARCHIVED target" to RESEARCH. GitHub archive flag remains false. Local pytest on pre-head `e5434837` was 11 passed. CI workflow aligned to Python 3.11 and `pytest -q`. Actions success is not yet observed and is not a completeness claim.
 
 ---
 
